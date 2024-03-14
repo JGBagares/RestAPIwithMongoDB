@@ -1,0 +1,69 @@
+###Get all User Info
+GET http://localhost:3000/user/info
+
+###Create User Info
+POST http://localhost:3000/user/info
+Content-Type: application/json
+
+{
+    "first_name": "Peter",
+    "last_name": "Peterson",
+    "age": 18,
+    "birthday": "1998-09-19"
+    
+}
+
+###Get User Info with Specific ID
+GET http://localhost:3000/user/info/65f29cc84f7f4b7078188f86
+
+###Update User Info with Specific ID
+PATCH http://localhost:3000/user/info/65f29cc84f7f4b7078188f86
+Content-Type: application/json
+
+{
+    "first_name": "Peter",
+    "last_name": "Peterson",
+    "age": 20,
+    "birthday": "1998-09-19"
+    
+}
+ 
+###Delete User Info with specific ID
+DELETE http://localhost:3000/user/info/65f29c724f7f4b7078188f82
+ 
+# ==========================================================================
+
+###Get all User Info
+GET http://localhost:3000/user/creds
+
+###Create User Info
+POST http://localhost:3000/user/creds
+Content-Type: application/json
+
+{
+    "username": "PeterPeter",
+    "password": "PeterisPeter",
+    "email": "PetePeter@example.com",
+    "role_type": "admin"
+}
+
+###Get User Info with Specific ID
+GET http://localhost:3000/user/info/65f2a060ea86d74c9abf14dd
+
+###Update User Info with Specific ID
+PATCH http://localhost:3000/user/info/65f2a060ea86d74c9abf14dd
+Content-Type: application/json
+
+{
+    "username": "PeterPeter",
+    "password": "PeterisPeter2020",
+    "email": "PetePeter@example.com",
+    "role_type": "admin"
+    
+}
+ 
+###Delete User Info with specific ID
+DELETE http://localhost:3000/user/info/65f2a060ea86d74c9abf14dd
+
+
+
